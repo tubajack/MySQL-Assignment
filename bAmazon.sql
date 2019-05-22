@@ -4,10 +4,15 @@ CREATE DATABASE mo_DB;
 USE mo_DB;
 
 CREATE TABLE products(
-    id INT NOT NULL AUTO_INCREMENT, 
+    item_id INT NOT NULL AUTO_INCREMENT, 
     product_name VARCHAR(100) NOT NULL, 
     category VARCHAR(50) NOT NULL, 
     price INT,
     stock_quantity INT, 
-    PRIMARY KEY(id)
+    PRIMARY KEY(item_id)
 );
+
+INSERT INTO products(item_id, product_name, category, price, stock_quantity)
+VALUES(1, "Basketball", "Sports Equipment", 15, 50); 
+
+SELECT * FROM products;
