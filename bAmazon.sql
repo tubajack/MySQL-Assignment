@@ -15,4 +15,10 @@ CREATE TABLE products(
 INSERT INTO products(item_id, product_name, category, price, stock_quantity)
 VALUES(1, "Basketball", "Sports Equipment", 15, 50); 
 
+INSERT INTO products(item_id, product_name, category, price, stock_quantity)
+VALUES(2, "Slow Cooker", "Kitchenware", 30, 10); 
+
+INSERT INTO products(item_id, product_name, category, price, stock_quantity)
+VALUES(3, "Vacuum Cleaners", "Appliances", 80, 20); 
+
 SELECT * FROM products;
