@@ -23,5 +23,3 @@ VALUES(3, "Vacuum Cleaners", "Appliances", 80, 20);
 
 INSERT INTO products(item_id, product_name, category, price, stock_quantity)
 VALUES(4, "Air Mattress", "Bedding", 100, 25); 
-
-SELECT * FROM products;

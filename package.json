@@ -1,0 +1,24 @@
+{
+  "name": "MySQL-assignment",
+  "version": "1.0.0",
+  "description": "MySQL assignment for the Coding Bootcamp at UT Austin.",
+  "main": "bAmazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tubajack/MySQL-Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tubajack/MySQL-Assignment/issues"
+  },
+  "homepage": "https://github.com/tubajack/MySQL-Assignment#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
