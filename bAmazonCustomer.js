@@ -40,5 +40,8 @@ function customerSelection(){
         name: "quantity",
         message: "How many units of the prduct would you like to buy>"
     }
-]).then(answer =>{console.log(answer.id)});
+]).then(function(input){
+    console.log("The customer has selected Item: " + input.id + " and " + input.quantity + " of the item");
+})
+//.then(answer =>{console.log(answer.id)});
 }
