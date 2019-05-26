@@ -34,6 +34,11 @@ function customerSelection(){
         type: "input", 
         name: "id",
         message: "What is the id of the product that you want to buy?"
+    },
+    {
+        type: "input",
+        name: "quantity",
+        message: "How many units of the prduct would you like to buy>"
     }
 ]).then(answer =>{console.log(answer.id)});
 }
