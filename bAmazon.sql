@@ -18,4 +18,8 @@ VALUES(1, "Basketball", "Sports Equipment", 15, 50),
 (3, "Vacuum Cleaners", "Appliances", 80, 20), 
 (4, "Air Mattress", "Bedding", 100, 25),
 (5, "Dog Harness", "Pets", 20.95, 37),
-(6, "Wet Dry Vacuum", "Tools", 80.77, 16); 
+(6, "Wet Dry Vacuum", "Tools", 80.77, 16),
+(7, "Body Spray", "Personal Care", 30, 50),
+(8, "50 Inch Flatscreen TV", "Entertainment", 189.99, 6), 
+(9),
+(10); 
