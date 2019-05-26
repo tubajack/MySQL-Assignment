@@ -21,5 +21,5 @@ VALUES(1, "Basketball", "Sports Equipment", 15, 50),
 (6, "Wet Dry Vacuum", "Tools", 80.77, 16),
 (7, "Body Spray", "Personal Care", 30, 50),
 (8, "50 Inch Flatscreen TV", "Entertainment", 189.99, 6), 
-(9),
-(10); 
+(9, "Gas Grill", "Home Decor", 159.99, 8),
+(10, "Multi Day Backpack", "Camping Gear", 49.99, 12); 
