@@ -43,8 +43,6 @@ function customerSelection(){
 ]).then(function(answer){
     console.log("The customer has selected Item: " + answer.id + " and " + answer.quantity + " of the item");
 
-    // var result = answer.item_id;
-    // var amount = answer.quantity;
 
     connection.query("SELECT * FROM products WHERE ?", {item_id: answer.id}, function(err, data){
         if(err) throw err;
@@ -62,8 +60,6 @@ function customerSelection(){
             // }
         }
 
-        console.log(data.length);
-        console.log("The query was successful");
     })
 })
 //.then(answer =>{console.log(answer.id)});
