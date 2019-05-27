@@ -46,6 +46,11 @@ function customerSelection(){
     connection.query("SELECT * FROM products", function(err, result){
         if(err) throw err;
 
+        if(result.length === 0){
+            console.log("The id that you have selected is invalid. Choose another ID.");
+        }
+
+        console.log(result.length);
         console.log("The query was successful");
     })
 })
