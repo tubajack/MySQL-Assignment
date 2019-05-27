@@ -43,14 +43,21 @@ function customerSelection(){
 ]).then(function(answer){
     console.log("The customer has selected Item: " + answer.id + " and " + answer.quantity + " of the item");
 
-    connection.query("SELECT * FROM products", function(err, result){
+    var result = answer.item_id;
+    var amount = answer.quantity;
+
+    connection.query("SELECT * FROM products", {item_id: result}, function(err, data){
         if(err) throw err;
 
-        if(result.length === 0){
+    
+        if(data.length === 0){
             console.log("The id that you have selected is invalid. Choose another ID.");
+        }else{
+            var productInfo = data[0];
+            console.log(productInfo);
         }
 
-        console.log(result.length);
+        console.log(data.length);
         console.log("The query was successful");
     })
 })
