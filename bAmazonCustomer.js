@@ -46,7 +46,7 @@ function customerSelection(){
     var result = answer.item_id;
     var amount = answer.quantity;
 
-    connection.query("SELECT * FROM products", {item_id: result}, function(err, data){
+    connection.query("SELECT * FROM products WHERE ?", {item_id: result}, function(err, data){
         if(err) throw err;
 
     
