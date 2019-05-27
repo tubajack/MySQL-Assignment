@@ -43,10 +43,10 @@ function customerSelection(){
 ]).then(function(answer){
     console.log("The customer has selected Item: " + answer.id + " and " + answer.quantity + " of the item");
 
-    var result = answer.item_id;
-    var amount = answer.quantity;
+    // var result = answer.item_id;
+    // var amount = answer.quantity;
 
-    connection.query("SELECT * FROM products WHERE ?", {item_id: result}, function(err, data){
+    connection.query("SELECT * FROM products WHERE ?", {item_id: answer.id}, function(err, data){
         if(err) throw err;
 
     
@@ -55,6 +55,11 @@ function customerSelection(){
         }else{
             var productInfo = data[0];
             console.log(productInfo);
+
+            //If the quantity is less than the quantity in stock
+            // if(quantity <= productInfo.stock_quantity){
+            //     console.log("This order can be processed");
+            // }
         }
 
         console.log(data.length);
