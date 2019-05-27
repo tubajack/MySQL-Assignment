@@ -57,6 +57,9 @@ function customerSelection(){
             //If the quantity is less than the quantity in stock
             if(answer.quantity <= productInfo.stock_quantity){
                 console.log("This order can be processed");
+
+                //Make sure to update the amount of product that you have left. After that, display it. 
+                var newUpdate = 'UPDATE products SET stock_quantity = ' + (productInfo.stock_quantity - answer.quantity) + 'WHERE item_id = ' + answer.id; 
             }else{
                 console.log("Be reasonable. We can't make that many products given such short notice");
             }
