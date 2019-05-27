@@ -40,8 +40,14 @@ function customerSelection(){
         name: "quantity",
         message: "How many units of the prduct would you like to buy>"
     }
-]).then(function(input){
-    console.log("The customer has selected Item: " + input.id + " and " + input.quantity + " of the item");
+]).then(function(answer){
+    console.log("The customer has selected Item: " + answer.id + " and " + answer.quantity + " of the item");
+
+    connection.query("SELECT * FROM products", function(err, result){
+        if(err) throw err;
+
+        console.log("The query was successful");
+    })
 })
 //.then(answer =>{console.log(answer.id)});
 }
