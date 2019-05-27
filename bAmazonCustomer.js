@@ -64,6 +64,8 @@ function customerSelection(){
                 connection.query(newUpdate, function(err, data){
                     if(err) throw err;
 
+                    console.log("Your order has been placed. The total amount is: " + productInfo.price * answer.quantity);
+
 
                 })
             }else{
