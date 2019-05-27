@@ -55,9 +55,11 @@ function customerSelection(){
             console.log(productInfo);
 
             //If the quantity is less than the quantity in stock
-            // if(quantity <= productInfo.stock_quantity){
-            //     console.log("This order can be processed");
-            // }
+            if(answer.quantity <= productInfo.stock_quantity){
+                console.log("This order can be processed");
+            }else{
+                console.log("Be reasonable. We can't make that many products given such short notice");
+            }
         }
 
     })
