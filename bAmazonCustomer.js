@@ -6,9 +6,9 @@ var inquirer = require("inquirer");
 //Establish a connection to the mysql database
 var connection = mysql.createConnection({
     host: "localhost", 
-    port: 4000, 
+    port: 3306, 
     user: "root", 
-    password: "root",
+    password: "baylor",
     database: "mo_DB"
 });
 
