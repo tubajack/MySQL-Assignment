@@ -35,3 +35,8 @@ In addition, I am going to buy 9 of these, despite the fact there are only 6 in 
 I get this result. The order does not go through when I try to buy more items than are in stock. 
 
 ![alt text](images/UnreasonableOrder.jpg)
+
+Now, I am going to try to purchase item 6, a Wet Dry Vacuum. 
+In addition, I am going to buy 10 of these, knowing that I have 30 in stock. 
+
+![alt text](images/ReasonableOrder.jpg)
