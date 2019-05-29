@@ -22,13 +22,13 @@ function amazonCustomers(){
     console.log("Here are the available products");
     connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
-        // Log all results of the SELECT statement
-        // for(var i = 0; i < res.length; i++){
-        //     console.log("Product ID: " + res[i].item_id + ' || ' + "Product Name: " + res[i].product_name + ' || ' + 
-        //     "Category: " + res[i].category + ' || ' + "Price: " + res[i].price + " || " + "Available Quantity: " + 
-        //     res[i].stock_quantity);
-        // }
-        console.log(res);
+        //Log all results of the SELECT statement
+        for(var i = 0; i < res.length; i++){
+            console.log("Product ID: " + res[i].item_id + ' || ' + "Product Name: " + res[i].product_name + ' || ' + 
+            "Category: " + res[i].category + ' || ' + "Price: " + res[i].price + " || " + "Available Quantity: " + 
+            res[i].stock_quantity);
+        }
+        //console.log(res);
         customerSelection();
     });
 }
@@ -70,7 +70,7 @@ function customerSelection(){
                 connection.query(newUpdate, function(err, data){
                     if(err) throw err;
 
-                    console.log("Your order has been placed. The total amount is: " + productInfo.price * answer.quantity);
+                    console.log("Your order has been placed. The total amount is: $" + productInfo.price * answer.quantity);
                     console.log("Thank you for shopping at BAmazon.")
 
                     //Always remember to end the database connection when finished
@@ -79,6 +79,7 @@ function customerSelection(){
                 })
             }else{
                 console.log("Be reasonable. We can't make that many products given such short notice");
+                connection.end();
             }
         }
 
