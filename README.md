@@ -36,7 +36,11 @@ I get this result. The order does not go through when I try to buy more items th
 
 ![alt text](images/UnreasonableOrder.jpg)
 
-Now, I am going to try to purchase item 6, a Wet Dry Vacuum. 
-In addition, I am going to buy 10 of these, knowing that I have 30 in stock. 
+Now, I am going to try to purchase item 6, a Wet Dry Vacuum.   
+In addition, I am going to buy 10 of these, knowing that I have 30 in stock.   
 
 ![alt text](images/ReasonableOrder.jpg)
+
+I get this result. The order goes through and the user is told the total cost.  
+In addition, the stock_quantity is updated.   
+This amount is lowered by the quantity ordered.   
