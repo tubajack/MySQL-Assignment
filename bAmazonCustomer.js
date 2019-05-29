@@ -23,12 +23,12 @@ function amazonCustomers(){
     connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
         // Log all results of the SELECT statement
-        for(var i = 0; i < res.length; i++){
-            console.log("Product ID: " + res[i].item_id + ' || ' + "Product Name: " + res[i].product_name + ' || ' + 
-            "Category: " + res[i].category + ' || ' + "Price: " + res[i].price + " || " + "Available Quantity: " + 
-            res[i].stock_quantity);
-        }
-        //console.log(res);
+        // for(var i = 0; i < res.length; i++){
+        //     console.log("Product ID: " + res[i].item_id + ' || ' + "Product Name: " + res[i].product_name + ' || ' + 
+        //     "Category: " + res[i].category + ' || ' + "Price: " + res[i].price + " || " + "Available Quantity: " + 
+        //     res[i].stock_quantity);
+        // }
+        console.log(res);
         customerSelection();
     });
 }
