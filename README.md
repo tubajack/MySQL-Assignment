@@ -16,3 +16,6 @@ One of the biggest challenges of completing the project was getting MySQL and No
 Originally, I had used MAMP, which is MacOS (operating system), Apache (Web Server), MySQL (database) and either PHP, Perl, or Python.   
 What happened when I used MAMP is that the Apache server loaded relatively quickly. However, the MySQL database took forever to load.  
 After chatting with my instructor, he suggested that I 
+1. Delete the MAMP application from the computer
+2. Go to services, check to see if MySQL is running
+3. If MySQL is not running, make sure that it is running.  
