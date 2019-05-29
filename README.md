@@ -24,6 +24,14 @@ After chatting with my instructor, he suggested that I
 To execute this program, use this command: **node bAmazonCustomer.js**  
 **bAmazonCustomer.js** is my JavaScript file for customers. 
 
-Once I execute the application, I get a list of potential store applications. 
+Once I execute the application, I get a list of items to purchase in the store. 
 
 ![alt text](images/StoreOptions.jpg)
+
+Let us try to purchase an item that we want that is in the store.  
+For example, I am going to try to purchase item 8, a TV.  
+In addition, I am going to buy 9 of these, despite the fact there are only 6 in stock. 
+
+I get this result. The order does not go through when I try to buy more items than are in stock. 
+
+![alt text](images/UnreasonableOrder.jpg)
