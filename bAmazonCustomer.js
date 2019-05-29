@@ -65,6 +65,7 @@ function customerSelection(){
                     if(err) throw err;
 
                     console.log("Your order has been placed. The total amount is: " + productInfo.price * answer.quantity);
+                    console.log("Thank you for shopping at BAmazon.")
 
 
                 })
