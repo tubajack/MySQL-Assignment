@@ -10,3 +10,9 @@ When I first saw the specifications of the project, I knew that this project was
 The technologies that were used in this project were MySQL for the database and Node.JS.   
 To make Node.js sync with MySQL, I had to use the npm MySQL package.   
 In addition, to create prompts, I used the inquirer package.   
+
+## Challenges of completing the project
+One of the biggest challenges of completing the project was getting MySQL and Node.js to work in sync.  
+Originally, I had used MAMP, which is MacOS (operating system), Apache (Web Server), MySQL (database) and either PHP, Perl, or Python.   
+What happened when I used MAMP is that the Apache server loaded relatively quickly. However, the MySQL database took forever to load.  
+After chatting with my instructor, he suggested that I 
