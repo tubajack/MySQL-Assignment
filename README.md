@@ -19,3 +19,11 @@ After chatting with my instructor, he suggested that I
 1. Delete the MAMP application from the computer
 2. Go to services, check to see if MySQL is running
 3. If MySQL is not running, make sure that it is running.  
+
+## Executing the application
+To execute this program, use this command: **node bAmazonCustomer.js**  
+**bAmazonCustomer.js** is my JavaScript file for customers. 
+
+Once I execute the application, I get a list of potential store applications. 
+
+![alt text](images/StoreOptions.jpg)
