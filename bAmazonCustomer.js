@@ -23,7 +23,10 @@ function amazonCustomers(){
     connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
         // Log all results of the SELECT statement
-        console.log(res);
+        for(var i = 0; i < res.length; i++){
+            console.log("Product ID: " + res[i].item_id);
+        }
+        //console.log(res);
         customerSelection();
     });
 }
@@ -67,6 +70,8 @@ function customerSelection(){
                     console.log("Your order has been placed. The total amount is: " + productInfo.price * answer.quantity);
                     console.log("Thank you for shopping at BAmazon.")
 
+                    //Always remember to end the database connection when finished
+                    connection.end();
 
                 })
             }else{
