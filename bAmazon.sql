@@ -18,7 +18,6 @@ VALUES(1, "Basketball", "Sports Equipment", 15, 50);
 INSERT INTO products(item_id, product_name, category, price, stock_quantity)
 VALUES(2, "Slow Cooker", "Kitchenware", 30, 10);
 
-
 INSERT INTO products(item_id, product_name, category, price, stock_quantity)
 VALUES(3, "Vacuum Cleaners", "Appliances", 80, 20);
 
@@ -42,4 +41,6 @@ VALUES(9, "Gas Grill", "Home Decor", 159.99, 8);
 
 INSERT INTO products(item_id, product_name, category, price, stock_quantity)
 VALUES(10, "Multi Day Backpack", "Camping Gear", 49.99, 12); 
+
+SELECT * FROM products;
 
