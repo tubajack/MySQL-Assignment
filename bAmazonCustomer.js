@@ -24,7 +24,9 @@ function amazonCustomers(){
         if (err) throw err;
         // Log all results of the SELECT statement
         for(var i = 0; i < res.length; i++){
-            console.log("Product ID: " + res[i].item_id);
+            console.log("Product ID: " + res[i].item_id + ' || ' + "Product Name: " + res[i].product_name + ' || ' + 
+            "Category: " + res[i].category + ' || ' + "Price: " + res[i].price + " || " + "Available Quantity: " + 
+            res[i].stock_quantity);
         }
         //console.log(res);
         customerSelection();
@@ -53,6 +55,7 @@ function customerSelection(){
     
         if(data.length === 0){
             console.log("The id that you have selected is invalid. Choose another ID.");
+            customerSelection();
         }else{
             var productInfo = data[0];
             console.log(productInfo);
