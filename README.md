@@ -44,3 +44,8 @@ In addition, I am going to buy 10 of these, knowing that I have 30 in stock.
 I get this result. The order goes through and the user is told the total cost.  
 In addition, the stock_quantity is updated.   
 This amount is lowered by the quantity ordered.   
+
+## Additional Note
+Whenever I execute this program, I am getting the same results for the stock_quantity.  
+Everything else is working correctly, and I have even talked with Antonio about this.  
+Antonio tested the code on his machine, and this program was working correctly on his machine.  
