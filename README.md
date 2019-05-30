@@ -49,3 +49,6 @@ This amount is lowered by the quantity ordered.
 Whenever I execute this program, I am getting the same results for the stock_quantity.  
 Everything else is working correctly, and I have even talked with Antonio about this.  
 Antonio tested the code on his machine, and this program was working correctly on his machine.  
+
+Here is a picture:  
+![alt text](images/MachineIssue.jpg)
